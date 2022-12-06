@@ -16,7 +16,7 @@ export function Countries({ country, select }: CountriesProps) {
     return (
         <Container>
             {countries.map(item => (
-                <Country key={item._id} onPress={() => handleSelectCountry(item._id)}>
+                <Country key={item._id} onPress={() => handleSelectCountry(item._id)} activeOpacity={.4}>
                     <Flag source={item.flag} />
                     <Text size={14} weight="600" opacity={country == item._id ? 1 : 0.5}>{item.name}</Text>
                 </Country>

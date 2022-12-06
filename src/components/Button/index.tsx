@@ -8,7 +8,7 @@ interface ButtonProps {
 
 export function Button({ title, onPress }: ButtonProps) {
     return (
-        <Container onPress={onPress}>
+        <Container onPress={onPress} activeOpacity={.7}>
             <Text weight="500" color="#fff">{title}</Text>
         </Container>
     )
